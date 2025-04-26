@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials - High Rated Spa and Barber</title>
+  <title>Testimonials -Lexxy Best Spa and barber shop</title>
   <style>
     /* General Reset */
     * {
@@ -35,7 +35,6 @@
       top: 0;
       left: 0;
       z-index: 1000;
-      animation: slideInFromTop 1s ease-out; /* Header animation */
       box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
     }
 
@@ -43,10 +42,6 @@
       width: 80px;
       height: auto;
       transition: transform 0.3s ease; /* Logo hover effect */
-    }
-
-    header img:hover {
-      transform: scale(1.1); /* Slightly enlarge logo on hover */
     }
 
     nav {
@@ -70,12 +65,7 @@
       transition: color 0.3s ease, transform 0.3s ease; /* Link hover effect */
     }
 
-    nav ul li a:hover {
-      color: #ffcc00; /* Yellow on hover */
-      transform: translateY(-3px); /* Slight lift on hover */
-    }
-
-    /* Responsive Navigation */
+    /* Hamburger Menu */
     .menu-btn {
       display: none;
       font-size: 2rem;
@@ -92,7 +82,7 @@
 
     @media (max-width: 768px) {
       nav ul {
-        display: none;
+        display: none; /* Hide menu by default on small screens */
         flex-direction: column;
         background-color: #00aaff;
         position: absolute;
@@ -108,21 +98,8 @@
       }
 
       .menu-btn {
-        display: block;
+        display: block; /* Show hamburger button on small screens */
       }
-    }
-
-    /* Hero Image - Centered */
-    .hero-image {
-      width: 60%;
-      max-width: 700px;
-      height: auto;
-      display: block;
-      margin: 100px auto 20px;
-      border-radius: 10px;
-      box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
-      opacity: 0; /* Start hidden */
-      animation: fadeInUp 1s ease-out 0.5s forwards; /* Hero image animation */
     }
 
     /* Testimonials Section */
@@ -131,59 +108,107 @@
       padding: 40px 20px;
       max-width: 700px;
       box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
-      opacity: 0; /* Start hidden */
-      animation: fadeInUp 1s ease-out 1s forwards; /* Testimonials animation */
+      margin-top: 100px; /* To avoid overlap with header */
     }
 
-    .testimonial-box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      min-height: 180px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-      box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
+    /* Hero Image */
+    .hero-image {
+      margin-top: 120px; /* Adjust this value to create space from the header */
     }
 
-    .testimonial-box.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .testimonial-box p {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .testimonial-author {
+    /* Typing Effect */
+    .typing-effect {
+      font-size: 1.5rem;
       font-weight: bold;
-      color: #00aaff;
-      font-size: 1rem;
+      color: #00aaff; /* Initial color */
+      white-space: nowrap; /* Prevent line breaks */
+      overflow: hidden; /* Hide overflow */
+      border-right: 2px solid; /* Cursor effect */
+      animation: blink 0.7s step-end infinite; /* Blinking cursor */
     }
 
-    /* Buttons */
-    .slider-buttons {
+    @keyframes blink {
+      50% {
+        border-color: transparent; /* Blink effect */
+      }
+    }
+
+    /* Slider Images */
+    .slider-container {
+      position: relative;
+      max-width: 700px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+
+    .slider-image {
+      width: 100%;
+      display: none; /* Hide all images by default */
+      border-radius: 10px;
+      box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
+      position: relative; /* Position relative for absolute children */
+    }
+
+    .slider-image.show {
+      display: block; /* Show the current image */
+    }
+
+    .slider-image img {
+      width: 100%; /* Make the image take the full width */
+      height: 300px; /* Set a fixed height */
+      object-fit: cover; /* Maintain aspect ratio and cover the area */
+      border-radius: 10px; /* Match the container's border radius */
+    }
+
+    /* Review Overlay (Outside the Slider Container) */
+    .review-overlay {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 700px; /* Match the slider container width */
+      margin: 20px auto; /* Center the overlay */
+      text-align: center;
+    }
+
+    .review-overlay .stars {
+      color: #ffcc00; /* Gold color for stars */
+    }
+
+       /* Google Icon and Encouragement */
+       .google-review {
       margin-top: 20px;
       display: flex;
-      justify-content: space-between;
-      box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
+      align-items: center;
+      justify-content: center;
     }
 
-    .slider-buttons button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      background-color: #00aaff;
-      color: white;
+    .google-review img {
+      width: 30px; /* Adjust size as needed */
+      margin-right: 10px;
+    }
+
+    /* Navigation Arrows */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(245, 241, 248, 0.5);
+      color: red;
       border: none;
+      padding: 10px;
       cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease, transform 0.3s ease; /* Button hover effect */
+      z-index: 10;
+      font-size:2.0em;
     }
 
-    .slider-buttons button:hover {
-      background-color: #0088cc;
-      transform: translateY(-3px); /* Slight lift on hover */
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
     }
 
     /* Footer */
@@ -214,6 +239,56 @@
       color: #ffcc00; /* Yellow on hover */
       transform: translateY(-3px); /* Slight lift on hover */
     }
+   
+
+    /* Important Links Section */
+.important-links {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f0f0; /* Light background for contrast */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.important-links h2 {
+  color: #00aaff; /* Match the theme color */
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.link-button {
+  background-color: #00aaff; /* Button color */
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.link-button:hover {
+  background-color: #0077cc; /* Darker shade on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Make buttons take full width */
+  }
+
+  .link-button {
+    width: 100%; /* Make each button take full width */
+    margin: 10px 0; /* Add some space between buttons */
+  }
+}
 
     /* Animations */
     @keyframes slideInFromTop {
@@ -263,6 +338,7 @@
         <li><a href="services.php">Services</a></li>
         <li><a href="testimonials.php">Testimonials</a></li>
         <li><a href="contact.php">Contact</a></li>
+        <li><a href="faq.php">FAQS</a></li>
       </ul>
     </nav>
   </header>
@@ -272,61 +348,140 @@
 
   <!-- Testimonials Section -->
   <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial-box show" id="testimonial-box">
-      <p id="testimonial-text">"This spa is the best! Amazing service and friendly staff!"</p>
-      <p class="testimonial-author" id="testimonial-author">- Jane Doe</p>
-    </div>
+    <h2>See What Our</h2>
+    <h2>Customers Say </h2>
+    
+    
+    <div class="typing-effect" id="typingText"></div>
 
-    <!-- Next/Prev Buttons -->
-    <div class="slider-buttons">
-      <button onclick="prevTestimonial()">Prev</button>
-      <button onclick="nextTestimonial()">Next</button>
-    </div>
+    <!-- Slider Images -->
+    <div class="slider-container">
+  <div class="slider-image show">
+    <img src="images/te1.png" alt="Testimonial 1">
+    <img src="images/google.png" alt="Google Review" class="google-icon" style="position: absolute; top: 10px; right: 10px; width: 40px; height: auto;">
+  
+  </div>
+  
+  <div class="slider-image">
+    <img src="images/te2.png" alt="Testimonial 2">
+    <img src="images/google.png" alt="Google Review" class="google-icon" style="position: absolute; top: 10px; right: 10px; width: 40px; height: auto;">
+   
+  </div>
+  
+  <div class="slider-image">
+    <img src="images/te3.png" alt="Testimonial 3">
+    <img src="images/google.png" alt="Google Review" class="google-icon" style="position: absolute; top: 10px; right: 10px; width: 40px; height: auto;">
+    
+  </div>
+  
+  <div class="slider-image">
+    <img src="images/te4.png" alt="Testimonial 4">
+    <img src="images/google.png" alt="Google Review" class="google-icon" style="position: absolute; top: 10px; right: 10px; width: 40px; height: auto;">
+   
+  </div>
+  
+  <div class="slider-image">
+    <img src="images/te5.png" alt="Testimonial 5">
+    <img src="images/google.png" alt="Google Review" class="google-icon" style="position: absolute; top: 10px; right: 10px; width: 40px; height: auto;">
+    
+  </div>
+  <div class="slider-image">
+    <img src="images/te6.png" alt="Testimonial 5">
+    <img src="images/google.png" alt="Google Review" class="google-icon" style="position: absolute; top: 10px; right: 10px; width: 40px; height: auto;">
+  
+  </div>
+  
+  <button class="arrow left" onclick="prevImage()">&#10094;</button>
+  <button class="arrow right" onclick="nextImage()">&#10095;</button>
+</div>
+
+    <!-- Review Overlay (Moved Outside the Slider Container) -->
+    
   </section>
 
-  
+  <!-- Important Links Section -->
+  <section class="important-links">
+    <h2>Important Links</h2>
+    <div class="button-container">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJe_L2r88XLxgRo_TJqvWKV2g" target="_blank" class="link-button">Write a Review</a>
+      <a href="https://g.co/kgs/F9GyiyA" target="_blank" class="link-button">Lexxy Spa and Barber Shop Profile</a>
+      <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/uv%3Fpb%3D!1s0x182f17cfaff6f27b:0x68578af5aac9f4a3!3m1!7e115!4s/maps/place/lexxy%252Bspa%252Band%252Bbarber%252Bshop/%40-1.2670799,36.7986957,3a,75y,350.29h,90t/data%253D*213m4*211e1*213m2*211suySclWOCk62yRLfFyiyRhg*212e0*214m2*213m1*211s0x182f17cfaff6f27b:0x68578af5aac9f4a3%3Fsa%253DX%2526ved%253D2ahUKEwjVuOeahPOLAxVXgf0HHcelO2wQpx96BAgtEAA!5slexxy%2Bspa%2Band%2Bbarber%2Bshop%2B-%2BGoogle%2BSearch!15zQ2dJZ0FRPT0%26imagekey%3D!1e2!2suySclWOCk62yRLfFyiyRhg%26cr%3Dle_a7%26hl%3Den%26ved%3D1t:206134%26ictx%3D111&ved=2ahUKEwjVuOeahPOLAxVXgf0HHcelO2wQtsoMegQIPxAQ&usg=AOvVaw1l_lPOUZb2_9uWLaN0SkkF" target="_blank" class="link-button">Pride Inn Azure and Its Environment</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Lexxy Spa and Barber. All Rights Reserved.</p>
     <div class="social-links">
-      <a href="#"><b>Facebook</b></a>
-      <a href="#"><b>Twitter</b></a>
-      <a href="#"><b>Instagram</b></a>
+      <a href="https://www.facebook.com/share/1FSPL6DX5K/"><b>Facebook</b></a>
+      <a href="https://www.tiktok.com/@lexxyspa?_t=ZM-8uPaqgDJlQ5&_r=1"><b>Tiktok</b></a>
+      <a href="https://www.instagram.com/lexxyspa_babershop?igsh=MW8yY25pbmV6MDhvaw=="><b>Instagram</b></a>
     </div>
   </footer>
 
   <script>
-    // Testimonials Data
-    const testimonials = [
-      { text: "This spa is the best! Amazing service and friendly staff!", author: "Jane Doe" },
-      { text: "I love the ambiance and professionalism here. Highly recommend!", author: "John Smith" },
-      { text: "Best haircut and massage experience ever!", author: "Sarah Johnson" }
-    ];
+    // Typing Effect
+    const typingText = document.getElementById('typingText');
+    const textToType = "Click here to review us";
+    let index = 0;
 
-    let currentIndex = 0;
-
-    function updateTestimonial() {
-      let box = document.getElementById("testimonial-box");
-      box.classList.remove("show");
-
-      setTimeout(() => {
-        document.getElementById("testimonial-text").textContent = testimonials[currentIndex].text;
-        document.getElementById("testimonial-author").textContent = `- ${testimonials[currentIndex].author}`;
-        box.classList.add("show");
-      }, 500); // Delay for smooth animation
+    function typeText() {
+      if (index < textToType.length) {
+        typingText.textContent += textToType.charAt(index);
+        index++;
+        setTimeout(typeText, 150); // Adjust typing speed here
+      } else {
+        // Make the text a clickable link
+        typingText.innerHTML = `<a href="https://search.google.com/local/writereview?placeid=ChIJe_L2r88XLxgRo_TJqvWKV2g" target="_blank" class="review-link">${textToType}</a>`;
+        typingText.style.color = getRandomColor(); // Change color after typing is complete
+      }
     }
 
-    function nextTestimonial() {
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      updateTestimonial();
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
     }
 
-    function prevTestimonial() {
-      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-      updateTestimonial();
+    // Slider Images
+    const images = document.querySelectorAll('.slider-image');
+    const reviewText = document.getElementById('review-text');
+    let currentImageIndex = 0;
+
+    
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.classList.remove('show');
+        if (i === index) {
+          img.classList.add('show');
+        }
+      });
+      // Update the review text
+      reviewText.textContent = reviews[index];
     }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      showImage(currentImageIndex);
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      showImage(currentImageIndex);
+    }
+
+    // Automatically change images every 30 seconds
+    setInterval(nextImage, 20000); // 30000 milliseconds = 30 seconds
+
+    // Start typing effect
+    window.onload = function() {
+      typeText();
+      showImage(currentImageIndex); // Show the first image and review
+    };
 
     // Toggle Navigation Menu for Mobile
     function toggleMenu() {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - High Rated Spa and Barber</title>
+  <title>Contact-Lexxy Best Spa and barber shop</title>
   <style>
     /* General Reset */
     * {
@@ -179,6 +179,15 @@
       font-size: 1.2rem;
       margin: 0 10px;
     }
+    .social-icon i {
+  font-size: 2.5rem; /* Increased icon size */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.social-icon i:hover {
+  color:rgb(192, 238, 10); /* Darker red on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
 
     footer p {
       font-size: 1rem;
@@ -214,7 +223,7 @@
       header nav ul li {
         margin-right: 0;
         margin-bottom: 10px;
-        font-size:3.0rem;
+        font-size:1.5rem;
       }
 
       .contact-info {
@@ -275,6 +284,7 @@
       footer p {
         font-size: 0.8rem;
       }
+      
     }
 
     /* Animations */
@@ -320,6 +330,7 @@
         <li><a href="services.php">Services</a></li>
         <li><a href="testimonials.php">Testimonials</a></li>
         <li><a href="contact.php">Contact</a></li>
+        <li><a href="faq.php">FAQS</a></li>
       </ul>
     </nav>
   
@@ -331,8 +342,8 @@
     <div class="info-container">
       <h2>Contact Information</h2>
       <p><strong>Phone:</strong> +254740000555 <i class="fas fa-phone-alt"></i></p>
-      <p><strong>Email:</strong> lexxyspa@gmail.com.com <i class="fas fa-envelope"></i></p>
-      <p><strong>Address:</strong> Pride Azure,Lantana Road, Nairobi,Kenya <i class="fas fa-map-marker-alt"></i></p>
+      <p><strong>Email:</strong> lexxyspa@gmail.com <i class="fas fa-envelope"></i></p>
+      <p><strong>Address:</strong> Pride Inn Azure,Lantana Road, Nairobi,Kenya <i class="fas fa-map-marker-alt"></i></p>
       <div class="social-icons">
         <!-- WhatsApp Link -->
         <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%20Shop%2C%20I%20would%20like%20to%20book%20an%20appointment%20with%20you." 
@@ -351,35 +362,39 @@
 
 </a>
         <!-- Facebook Link -->
-        <a href="https://www.facebook.com/lexxyspa" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/share/1FSPL6DX5K/" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
         <!-- Twitter Link -->
-        <a href="https://twitter.com/lexxyspa" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/lexxyspa_babershop?igsh=MW8yY25pbmV6MDhvaw==" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
         <!-- Instagram Link -->
         <a href="https://www.instagram.com/lexxyspaSpa" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
       <p style="color: red; font-size: 1rem; margin-top: 10px;">
   Click on an icon of your preference to book an appointment.
 </p>
-      <a href="https://wa.me/254740000555" class="book-btn">Book Appointment</a>
+      <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%20Shop%2C%20I%20would%20like%20to%20book%20an%20appointment%20with%20you."  class="book-btn">Book Appointment</a>
     </div>
   </section>
 
-  <!-- Footer with Social Links -->
   <footer class="animated delay-2">
   <div class="social-links">
-    <a href="https://www.facebook.com/HighRatedSpa" class="social-icon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-    <a href="https://www.instagram.com/HighRatedSpa" class="social-icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-    <a href="https://twitter.com/HighRatedSpa" class="social-icon" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="https://www.facebook.com/share/1FSPL6DX5K/" class="social-icon" target="_blank">
+      <i class="fab fa-facebook" style="color: #ff4444;"></i>
+    </a>
+    <a href="https://www.instagram.com/HighRatedSpa" class="social-icon" target="_blank">
+      <i class="fab fa-instagram" style="color: #ff4444;"></i>
+    </a>
+    <a href="https://www.tiktok.com/@lexxyspa?_t=ZM-8uPaqgDJlQ5&_r=1" class="social-icon" target="_blank">
+      <i class="fab fa-tiktok"style="color: #ff4444;"></i>
+    </a>
   </div>
-  <p>© 2025 High Rated Spa and Barber. All Rights Reserved.</p>
+  <p>© 2025 Lexxy Spa and Barber. All Rights Reserved.</p>
   <p>System designed with love by 
-  <a href="https://wa.me/254768407740?text=Hello%20Lawrence,%20I%20hope%20you're%20doing%20well.%20I'd%20love%20to%20have%20a%20quick%20chat%20with%20you." 
-   style="color: red; text-decoration: underline; font-weight: bold; font-size: 1.2rem;" 
-   target="_blank">
-   Lawrence Nyamai
-</a>
-</p>
-
+    <a href="https://wa.me/254768407740?text=Hello%20Lawrence,%20I%20hope%20you're%20doing%20well.%20I'd%20love%20to%20have%20a%20quick%20chat%20with%20you." 
+       style="color: red; text-decoration: underline; font-weight: bold; font-size: 1.2rem;" 
+       target="_blank">
+       Lawrence Nyamai
+    </a>
+  </p>
 </footer>
 
 

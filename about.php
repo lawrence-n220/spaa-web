@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Lexxy Spa & Barber Shop</title>
+    <title>About Us-Lexxy Best Spa and barber shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -258,6 +258,7 @@
         <a href="services.php">Services</a>
         <a href="contact.php">Contact</a>
         <a href="testimonials.php">Testimonials</a>
+        <a href="faq.php">FAQS</a>
     </nav>
 
     <!-- Mobile Navigation -->
@@ -267,6 +268,7 @@
         <a href="services.php">Services</a>
         <a href="contact.php">Contact</a>
         <a href="testimonials.php">Testimonials</a>
+        <a href="faq.php">FAQS</a>
     </div>
 </header>
 
@@ -283,7 +285,7 @@
         <div class="location animated delay-3">
             <h2>Where We Are Located</h2>
             <p>Visit us at our conveniently located spa and barber shop in the heart of the city. We are easily accessible and offer ample parking for our clients.</p>
-            <p><strong>Address:</strong> Pride Azure,Lantana Road, Nairobi,Kenya</p>
+            <p><strong>Address:</strong> Pride Inn Azure,Ground floor,Lantana Road, Nairobi,Kenya</p>
             <!-- Embedded Google Map -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8431866974634!2d36.7986448!3d-1.2667823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17cfaff6f27b%3A0x68578af5aac9f4a3!2sLexxy%20spa%20and%20barber%20shop!5e0!3m2!1sen!2ske!4v1740138929303!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -296,44 +298,41 @@
                 <p>Receptionist</p>
             </div>
             <div class="team-member animated delay-1">
-                <img src="images/stylist.jpg" alt="John Doe">
+                <img src="images/stylist1.jpg" alt="John Doe">
                 <h3>John Daniel</h3>
                 <p>Founder & Lead Stylist</p>
             </div>
-            <div class="team-member animated delay-2">
-                <img src="images/therapist.jpg" alt="Jane Smith">
-                <h3>Jane Simon</h3>
-                <p>Senior Spa Therapist</p>
-            </div>
+          
             <div class="team-member animated delay-3">
-                <img src="images/barber.jpg" alt="Mark Johnson">
-                <h3>Mark peter</h3>
-                <p>Barber Specialist</p>
-            </div>
-            <div class="team-member animated delay-3">
-                <img src="images/barber2.jpg" alt="Mark Johnson">
+                <img src="images/haircut1.jpg" alt="Mark Johnson">
                 <h3>Lawrence Daniel</h3>
                 <p>Barber Specialist</p>
             </div>
+           
             <div class="team-member animated delay-3">
-                <img src="images/masseur.jpg" alt="Mark Johnson">
-                <h3>Lucy Felix</h3>
-                <p>Masseur Specialist</p>
-            </div>
-            <div class="team-member animated delay-3">
-                <img src="images/masseur2.jpg" alt="Mark Johnson">
+                <img src="images/massage.jpg" alt="Mark Johnson">
                 <h3>Caroh wycliffe</h3>
                 <p>Masseur Specialist</p>
             </div>
             <div class="team-member animated delay-3">
-                <img src="images/beutician.jpg" alt="Mark Johnson">
+                <img src="images/image5.jpg" alt="Mark Johnson">
                 <h3>Ivy Wavinya</h3>
+                <p>Barber Specialist</p>
+            </div>
+            <div class="team-member animated delay-3">
+                <img src="images/beutician1.jpg" alt="Mark Johnson">
+                <h3>Maryanne Mwende</h3>
                 <p>Beutician Specialist</p>
             </div>
             <div class="team-member animated delay-3">
-                <img src="images/beutician2.jpg" alt="Mark Johnson">
-                <h3>Maryanne Mwende</h3>
-                <p>Beutician Specialist</p>
+                <img src="images/bodytreatment.jpg" alt="Mark Johnson">
+                <h3>Joy John</h3>
+                <p>Body Treatment</p>
+            </div>
+            <div class="team-member animated delay-3">
+                <img src="images/oils.jpg" alt="Mark Johnson">
+                <h3>Henry Ian</h3>
+                <p>Special Oils</p>
             </div>
         </div>
     </div>
@@ -341,9 +340,9 @@
     <footer class="animated delay-3">
         <p>Follow us on</p>
         <div class="social-media">
-            <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.facebook.com/share/1FSPL6DX5K/" class="social-icon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/lexxyspa_babershop?igsh=MW8yY25pbmV6MDhvaw==" class="social-icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.tiktok.com/@lexxyspa?_t=ZM-8uPaqgDJlQ5&_r=1" class="social-icon" target="_blank"><i class="fab fa-tik tok"></i> Tik Tok</a>
         </div>
         <p>&copy; 2025 Lexxy Spa & Barber Shop. All rights reserved.</p>
     </footer>

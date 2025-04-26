@@ -1,0 +1,4 @@
+https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/uv%3Fpb%3D!1s0x182f17cfaff6f27b:0x68578af5aac9f4a3!3m1!7e115!4s/maps/place/lexxy%252Bspa%252Band%252Bbarber%252Bshop/%40-1.2670799,36.7986957,3a,75y,350.29h,90t/data%253D*213m4*211e1*213m2*211suySclWOCk62yRLfFyiyRhg*212e0*214m2*213m1*211s0x182f17cfaff6f27b:0x68578af5aac9f4a3%3Fsa%253DX%2526ved%253D2ahUKEwjVuOeahPOLAxVXgf0HHcelO2wQpx96BAgtEAA!5slexxy%2Bspa%2Band%2Bbarber%2Bshop%2B-%2BGoogle%2BSearch!15zQ2dJZ0FRPT0%26imagekey%3D!1e2!2suySclWOCk62yRLfFyiyRhg%26cr%3Dle_a7%26hl%3Den%26ved%3D1t:206134%26ictx%3D111&ved=2ahUKEwjVuOeahPOLAxVXgf0HHcelO2wQtsoMegQIPxAQ&usg=AOvVaw1l_lPOUZb2_9uWLaN0SkkF
+link for viewing it google location of pride azure
+https://g.co/kgs/F9GyiyA
+link to profile

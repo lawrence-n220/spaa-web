@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexxy SPA & Barber Shop</title>
+    <title>Home-Lexxy Best Spa and barber shop</title>
     <style>
         /* Reset */
         * {
@@ -24,7 +24,7 @@
             padding: 15px 20px;
             background: #007BFF; /* Bright Blue */
             color: white;
-            box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
+            box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);w
         }
         header img {
             width: 100px;
@@ -66,26 +66,33 @@
             background: red;
         }
 
-        /* Slider */
-        .slider {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background: #F0F0F0; /* Light Gray */
-            box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
-        }
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+       /* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Fixed height for the slider */
+    background: #F0F0F0; /* Light Gray */
+    box-shadow: 0 40px 90px rgba(0, 238, 255, 0.4);
+    overflow: hidden; /* Prevent overflow of images */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Start with slides hidden */
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+.slide img {
+    width: 100%; /* Make the image take full width */
+    height: 100%; /* Make the image take full height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.slide.active {
+    opacity: 1; /* Show the active slide */
+}
         .description {
             position: absolute;
             bottom: 20px;
@@ -210,31 +217,50 @@
         }
 
         /* Footer Styles */
-        footer {
-            background: #007BFF; /* Bright Blue */
-            color: white;
-            padding: 20px 20px;
-            text-align: center;
-        }
-        .footer-social {
-            margin-bottom: 10px;
-        }
-        .footer-social a {
-            margin: 0 15px;
-            color: #FF3B3B; /* Reddish Color */
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        .footer-social a:hover {
-            color: #cc0000; /* Darker Red */
-            transform: scale(1.2); /* Slight Zoom on Hover */
-        }
-        .footer-bottom {
-            font-size: 14px;
-            margin-top: 10px;
-        }
+       /* Footer Styles */
+footer {
+    background: #007BFF; /* Bright Blue */
+    color: white;
+    padding: 30px 20px; /* Increased padding for more space */
+    text-align: center;
+}
+
+.footer-social {
+    margin-bottom: 15px; /* Increased margin for spacing */
+}
+
+.footer-social a {
+    margin: 0 15px;
+    color: #FF3B3B; /* Reddish Color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px; /* Increased font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Social icon hover effect */
+}
+
+.footer-social a:hover {
+    color: #cc0000; /* Darker Red */
+    transform: scale(1.2); /* Slight Zoom on Hover */
+}
+
+.footer-bottom {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Social Media Icons */
+.social-links a {
+    color: white;
+    font-size: 2rem; /* Increased size for social icons */
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Social icon hover effect */
+}
+
+.social-links a:hover {
+    color: #ffcc00; /* Yellow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -295,34 +321,40 @@
                 <li><a href="#services"><i class="fas fa-spa"></i> Services</a></li>
                 <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
                 <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
+                <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQS</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Homepage (Slider) -->
     <section id="home" class="slider">
-        <div class="slide fade">
-            <img src="images/image1.jpg" alt="Relaxing Spa">
-            <div class="description">Experience ultimate relaxation</div>
-        </div>
-        <div class="slide fade">
-            <img src="images/image2.jpg" alt="Barber Services">
-            <div class="description">Premium barber services for all styles</div>
-        </div>
-        <div class="slide fade">
-            <img src="images/image3.jpg" alt="Luxury Treatments">
-            <div class="description">Luxury spa treatments for your well-being</div>
-        </div>
-        <div class="slide fade">
-            <img src="images/image4.jpg" alt="Luxury Treatments">
-            <div class="description">Luxury spa treatments for your well-being</div>
-        </div>
-    </section>
+    <div class="slide fade">
+        <img src="images/image4.jpg" alt="Relaxing Spa">
+        <div class="description">Immerse yourself in tranquility and let the world fade away. Experience ultimate relaxation in our serene spa environment.</div>
+    </div>
+    <div class="slide fade">
+        <img src="images/azure.jpg" alt="Relaxing Spa">
+        <div class="description">Revitalize your body and soul with our rejuvenating body treatments. Feel the stress melt away as you indulge in pure bliss.</div>
+    </div>
+    <div class="slide fade">
+        <img src="images/image5.jpg" alt="Barber Services">
+        <div class="description">Step into style with our premium barber services. Our skilled barbers are here to craft the perfect look that reflects your unique personality.</div>
+    </div>
+    <div class="slide fade">
+        <img src="images/azure2.jpg" alt="Luxury Treatments">
+        <div class="description">Nourish your skin with our luxurious spa treatments. Experience the healing power of nature with our organic oils and soothing therapies.</div>
+    </div>
+    
+    <div class="slide fade">
+        <img src="images/image4.jpg" alt="Luxury Treatments">
+        <div class="description">Escape the ordinary and embrace the extraordinary. Our luxury treatments are designed to elevate your well-being and rejuvenate your spirit.</div>
+    </div>
+</section>
 
     <!-- Welcome Section -->
     <section id="welcome">
         <div class="welcome-card">
-            <h2>Welcome to Lexxy Spa & Barber</h2>
+            <h2>Welcome to Lexxy Spa & Barber Shop</h2>
             <p>Experience the best spa and barber services designed to rejuvenate your body and mind. Our expert professionals ensure top-quality treatments tailored to your needs.</p>
             <div class="why-image">
                 <img src="images/image4.jpg" alt="Why Choose Us">
@@ -358,7 +390,13 @@
             <p>See what our clients say about us.</p>
             <a href="testimonials.php" class="btn">View Testimonials</a>
         </div>
+        <div class="card" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>See our frequently asked questions.</p>
+            <a href="faq.php" class="btn">View our FAQS</a>
+        </div>
     </section>
+
 
     <!-- Why Choose Us Section -->
     <section id="why-choose-us">
@@ -376,15 +414,19 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-social">
-            <a href="#" class="social-icon">Facebook</a>
-            <a href="#" class="social-icon">Instagram</a>
-            <a href="#" class="social-icon">Twitter</a>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lexxy Spa & Barber. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/share/1FSPL6DX5K/" class="social-icon" target="_blank">
+            <i class="fab fa-facebook" style="color: #ff4444;"></i>
+        </a>
+        <a href="https://www.instagram.com/lexxyspa_babershop?igsh=MW8yY25pbmV6MDhvaw==" class="social-icon" target="_blank">
+            <i class="fab fa-instagram" style="color: #ff4444;"></i>
+        </a>
+        <a href="https://www.tiktok.com/@lexxyspa?_t=ZM-8uPaqgDJlQ5&_r=1" class="social-icon" target="_blank">
+            <i class="fab fa-tiktok" style="color: #ff4444;"></i>
+        </a>
+    </div>
+    <p>© 2025 LEXXY SPA AND BARBER SHOP. ALL RIGHTS RESERVED.</p>
+</footer>
 
     <script>
         let slideIndex = 0;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - High Rated Spa and Barber</title>
+    <title>Our Services -Lexxy Best Spa and barber shop</title>
     <style>
         /* General Reset */
         * {
@@ -288,6 +288,7 @@ body {
             <li><a href="services.php">Services</a></li>
             <li><a href="testimonials.php">Testimonials</a></li>
             <li><a href="contact.php">Contact</a></li>
+            <li><a href="faq.php">FAQS</a></li>
         </ul>
     </nav>
 </header>
@@ -306,10 +307,10 @@ body {
                     <li>Hair Coloring & Highlights</li>
                     
                 </ul>
-                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Haircut%20&%20Styling%20service." 
+                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Haircut%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
-            <img src="images/haircut.jpg" alt="Haircut Service">
+            <img src="images/haircut1.jpg" alt="Haircut Service">
         </div>
 
         <!-- Massage Therapy -->
@@ -323,7 +324,7 @@ body {
                     <li>Aromatherapy</li>
                     <li>Reflexology</li>
                 </ul>
-                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20massage%20&%20Styling%20service." 
+                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20massage%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
             <img src="images/massage.jpg" alt="Massage Service">
@@ -344,10 +345,10 @@ body {
           <li>Couple Massage</li>
           <li>Lymphatic Drainage</li>
         </ul>
-        <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Steamingt%20&%20Styling%20service." 
+        <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Steamingt%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
-            <img src="images/steaming.jpg" alt="Facial Treatment">
+            <img src="images/steaming1.jpg" alt="Facial Treatment">
         </div>
         <div class="service-container">
             <div class="service-content">
@@ -358,7 +359,7 @@ body {
           <li>Jojoba Oils</li>
           <li>Coconut Oil</li>
         </ul>
-        <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Special Oil%20&%20Styling%20service." 
+        <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Special Oil%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
             <img src="images/oils.jpg" alt="Facial Treatment">
@@ -377,7 +378,7 @@ body {
                     <li>Cuticle Care & Nail Strengthening</li>
                     <li>Paraffin Wax Treatment</li>
                 </ul>
-                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Nail Care%20&%20Styling%20service." 
+                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Nail Care%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
             <img src="images/nails.jpg" alt="Nail Care">
@@ -394,7 +395,7 @@ body {
                     <li>Brazilian & Bikini Wax</li>
                     <li>Threading Services</li>
                 </ul>
-                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Waxing and Hair Removal%20&%20Styling%20service." 
+                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20Waxing and Hair Removal%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
             <img src="images/waxing.jpg" alt="Waxing Service">
@@ -411,10 +412,10 @@ body {
                     <li>Cellulite Reduction Treatment</li>
                     <li>Herbal & Salt Scrubs</li>
                 </ul>
-                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20body treatment service%20&%20Styling%20service." 
+                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20body treatment%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
-            <img src="images/body-treatment.jpg" alt="Body Treatment">
+            <img src="images/bodytreatment.jpg" alt="Body Treatment">
         </div>
 
         <!-- Grooming Services -->
@@ -428,17 +429,17 @@ body {
                     <li>Hot Towel Shave</li>
                     <li>Men’s Facial Cleansing</li>
                 </ul>
-                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20grooming%20&%20Styling%20service." 
+                <a href="https://wa.me/254740000555?text=Hello%20Lexxy%20Spa%20and%20Barber%2C%20I%20want%20to%20book%20a%20grooming%20service." 
                    class="book-btn" target="_blank">Book Service</a>
             </div>
-            <img src="images/grooming.jpg" alt="Grooming Service">
+            <img src="images/grooming1.jpg" alt="Grooming Service">
         </div>
     </section>
     <footer>
     <div class="social-links">
-      <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://www.facebook.com/share/1FSPL6DX5K/" class="social-icon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com/lexxyspa_babershop?igsh=MW8yY25pbmV6MDhvaw==" class="social-icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.tiktok.com/@lexxyspa?_t=ZM-8uPaqgDJlQ5&_r=1" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a>
     </div>
     <p>© 2025 Lexxy Spa and Barber. All Rights Reserved.</p>
   </footer>
